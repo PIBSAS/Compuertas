@@ -40,20 +40,6 @@
             z-index: -1;
             background-color: #000; /* Fondo negro para asegurar visibilidad de partículas */
         }
-        .count-particles {
-            position: absolute;
-            top: 48px;
-            left: 0;
-            width: 80px;
-            color: #13E8E9;
-            font-size: .8em;
-            text-align: left;
-            text-indent: 4px;
-            line-height: 14px;
-            padding-bottom: 2px;
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
@@ -62,11 +48,6 @@
     
     <!-- Particles.js container -->
     <div id="particles-js"></div>
-    
-    <!-- count particles -->
-    <div class="count-particles">
-        <span class="js-count-particles">--</span> particles
-    </div>
     
     <h1>Compuerta OR:</h1>
     <div class="container">
@@ -132,12 +113,8 @@
     <!-- stats.js -->
     <!-- <script src="js/lib/stats.js"></script> -->
     <script>
-        var count_particles, update;
-        count_particles = document.querySelector('.js-count-particles');
+        var update;
         update = function() {
-            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-            }
             requestAnimationFrame(update);
         };
         requestAnimationFrame(update);
