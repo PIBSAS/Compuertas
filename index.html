@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
+    <style>
+        .boton-enlace {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .boton-enlace:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <h1>Circuitos</h1>
     <p>Haz clic en el siguiente enlace para Simular una Compuerta OR con Transistor NPN:</p>
-    <a href="or.html">Compuerta OR</a>
+    <a href="or.html" class="boton-enlace" target="_blank">Compuerta OR</a>
 
     <p>Haz clic en el siguiente enlace para Simular una Compuerta AND con Transistor NPN:</p>
-    <a href="and.html">Compuerta AND</a>
+    <a href="and.html" class="boton-enlace" target="_blank">Compuerta AND</a>
 </body>
 </html>
