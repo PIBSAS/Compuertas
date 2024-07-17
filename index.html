@@ -21,10 +21,24 @@
         .boton-enlace:hover {
             background-color: #0056b3;
         }
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .container img {
+            width: 45%; /* Ajusta el ancho de las imágenes según sea necesario */
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Circuitos</h1>
+    <h1>Compuerta OR:</h1>
+    <div class="container">
+        <img src="imagenes/or.svg" alt="OR">
+        <img src="imagenes/tabla_or.svg" alt="OR">
+    </div>
+    
     <p>Haz clic en el siguiente enlace para Simular una Compuerta OR con Transistor NPN(2N2222A):</p>
     <a href="or.html" class="boton-enlace" target="_blank">Compuerta OR</a>
 
