@@ -4517,7 +4517,7 @@
   <line stroke-linecap="round" y1="154.622" stroke="#404040" y2="82.6233" x2="176.519" stroke-width="1.6" x1="176.533"/>
  </g>
  <g partID="59240">
-  <line stroke-linecap="round" y1="75.4233" stroke="#ad6a38" y2="75.4198" x2="306.118" stroke-width="3.2" x1="190.919"/>
-  <line stroke-linecap="round" y1="75.4233" stroke="#ef6100" y2="75.4198" x2="306.118" stroke-width="1.6" x1="190.919"/>
+  <line stroke-linecap="round" y1="61.0233" stroke="#ad6a38" y2="61.0198" x2="306.118" stroke-width="3.2" x1="190.919"/>
+  <line stroke-linecap="round" y1="61.0233" stroke="#ef6100" y2="61.0198" x2="306.118" stroke-width="1.6" x1="190.919"/>
  </g>
 </svg>
