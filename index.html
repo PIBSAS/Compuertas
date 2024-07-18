@@ -41,6 +41,11 @@
         .fritz img {
             width: 40%; /* Ajusta el ancho de las imágenes según sea necesario */
             height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .fritz img.zoom:hover {
+            transform: scale(1.2); /* Escala la imagen al 120% cuando se pasa el ratón */
         }
         
         .boton-fritz {
@@ -84,7 +89,7 @@
         <img src="imagenes/tabla_or.svg" alt="OR">
     </div>
     <div class="fritz">
-        <img src="parts/OR_bb.svg" alt="OR con Transistores NPN 2N2222A"><br>
+        <img src="parts/OR_bb.svg" alt="OR con Transistores NPN 2N2222A" class="zoom"><br>
         <a href="parts/OR.fzz" class="boton-fritz" target="_blank" download="OR.fzz">Esquema Visual Fritzing</a><br>
         <a href="or.html" class="boton-enlace" target="_blank">Simular Compuerta OR con Transistores NPN</a>
     </div>
