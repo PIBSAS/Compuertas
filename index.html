@@ -169,8 +169,26 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
     
     <h2>Compuerta AND:</h2>
     <div class="container">
-        <img src="imagenes/and.svg" alt="AND">
+        <img src="imagenes/and.svg" alt="AND"><br>
         <!--<div class="row justify-content-center py-4">-->
+	<!--Logica AND-->
+	<div class="col-lg-6 container-Left bg-and" id="cmp2">
+		<div class="ButtonA " id="S1" data-out="0">
+			<label class="switch">
+				<input type="checkbox" id="SO" onclick="switchTW('cmp2','S1');FNC_AND('cmp2');">
+				<span class="SWslider round"></span>
+			</label>
+		</div>
+		<div class="ButtonB" id="S2" data-out="0">
+			<label class="switch">
+				<input type="checkbox" id="SO" onclick="switchTW('cmp2','S2');FNC_AND('cmp2');">
+				<span class="SWslider round"></span>
+			</label>
+		</div>
+		<div class="none"></div>
+		<div class="led off" id="out1"><img src="imagenes/diodo-led.svg" class="diodo"></div>
+	</div>
+	<!--Fin de Logica-->
 	<!--Tabla Inicio-->
 	<div class="col-lg-6 table-container">
 		<table id="Tand" class="Tabla-V">
@@ -207,24 +225,7 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
 		</table>
 	</div>
 	<!--</div>-->
-            <!--Logica AND-->
-	<div class="col-lg-6 container-Left bg-and" id="cmp2">
-		<div class="ButtonA " id="S1" data-out="0">
-			<label class="switch">
-				<input type="checkbox" id="SO" onclick="switchTW('cmp2','S1');FNC_AND('cmp2');">
-				<span class="SWslider round"></span>
-			</label>
-		</div>
-		<div class="ButtonB" id="S2" data-out="0">
-			<label class="switch">
-				<input type="checkbox" id="SO" onclick="switchTW('cmp2','S2');FNC_AND('cmp2');">
-				<span class="SWslider round"></span>
-			</label>
-		</div>
-		<div class="none"></div>
-		<div class="led off" id="out1"><img src="imagenes/diodo-led.svg" class="diodo"></div>
-	</div>
-	<!--Fin de Logica-->
+        <br>
         <!--<img src="imagenes/tabla_and.svg" alt="AND">-->
     </div>
     <div class="fritz">
