@@ -168,73 +168,75 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
     <br>
     
     <h2>Compuerta AND:</h2>
-    <div class="container">
-        <img src="imagenes/and.svg" alt="AND">
-	    <br>
-        <!--<div class="row justify-content-center py-4">-->
-	<!--Logica AND-->
-	    <br>
-	<div class="col-lg-6 container-Leftt bg-and" id="cmp2">
-		<div class="ButtonA " id="S1" data-out="0">
-			<label class="switch">
-				<input type="checkbox" id="SO" onclick="switchTW('cmp2','S1');FNC_AND('cmp2');">
-				<span class="SWslider round"></span>
-			</label>
-		</div>
-		<div class="ButtonB" id="S2" data-out="0">
-			<label class="switch">
-				<input type="checkbox" id="SO" onclick="switchTW('cmp2','S2');FNC_AND('cmp2');">
-				<span class="SWslider round"></span>
-			</label>
-		</div>
-		<div class="none">
-			
-		</div>
-		<div class="led off" id="out1">
-			<img src="imagenes/diodo-led.svg" class="diodo" alt="diodo">
-		</div>
-	</div>
-	<!--Fin de Logica-->
-	    <br>
-	<!--Tabla Inicio-->
-	<div class="col-lg-6 table-container">
-		<table id="Tand" class="Tabla-V">
-			<thead>
-				<tr>
-					<th>B</th>
-					<th>A</th>
-					<th>SALIDA</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr style="background-color: #FD6F1D">
-					<td>0</td>
-					<td>0</td>
-					<td>0</td>
-				</tr>
-				<tr>
-					<td>0</td>
-					<td>1</td>
-					<td>0</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>0</td>
-					<td>0</td>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-				</tr>
-			</tbody>
-			</tr>
-		</table>
-	</div>
-	<!--</div>-->
-        <br>
-        <!--<img src="imagenes/tabla_and.svg" alt="AND">-->
+<div class="container">
+    <!-- Imagen de la Compuerta AND -->
+    <div class="row">
+        <div class="col-12">
+            <img src="imagenes/and.svg" alt="AND" class="img-fluid">
+        </div>
     </div>
+    <br>
+    
+    <!-- Simulación Interactiva -->
+    <div class="row">
+        <div class="col-lg-6 container-Left bg-and" id="cmp2">
+            <div class="ButtonA" id="S1" data-out="0">
+                <label class="switch">
+                    <input type="checkbox" id="SO" onclick="switchTW('cmp2','S1');FNC_AND('cmp2');">
+                    <span class="SWslider round"></span>
+                </label>
+            </div>
+            <div class="ButtonB" id="S2" data-out="0">
+                <label class="switch">
+                    <input type="checkbox" id="SO" onclick="switchTW('cmp2','S2');FNC_AND('cmp2');">
+                    <span class="SWslider round"></span>
+                </label>
+            </div>
+            <div class="none"></div>
+            <div class="led off" id="out1">
+                <img src="imagenes/diodo-led.svg" class="diodo" alt="diodo">
+            </div>
+        </div>
+        
+        <!-- Tabla -->
+        <div class="col-lg-6 table-container">
+            <table id="Tand" class="Tabla-V">
+                <thead>
+                    <tr>
+                        <th>B</th>
+                        <th>A</th>
+                        <th>SALIDA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #FD6F1D">
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <!-- Imagen de la Tabla de la Compuerta AND (si es necesario) -->
+    <!--<img src="imagenes/tabla_and.svg" alt="AND">-->
+</div>
     <div class="fritz">
         <img src="parts/AND_bb.svg" alt="AND con Transistores NPN 2N2222A" class="zoom"><br>
         <br>
