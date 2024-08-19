@@ -175,20 +175,29 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
     <br>
     
     <!-- Simulación Interactiva -->
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-lg-6 container-Left bg-and" id="cmp2">
-            <div class="ButtonA" id="S1" data-out="0">
-                <label class="switch">
-                    <input type="checkbox" id="SO" onclick="switchTW('cmp2','S1');FNC_AND('cmp2');">
-                    <span class="SWslider round"></span>
-                </label>
-            </div>
-            <div class="ButtonB" id="S2" data-out="0">
-                <label class="switch">
-                    <input type="checkbox" id="SO" onclick="switchTW('cmp2','S2');FNC_AND('cmp2');">
-                    <span class="SWslider round"></span>
-                </label>
-            </div>
+		<div class="row">
+                <div class="col text-center">
+                    <label for="S1">A</label>
+	            <div class="ButtonA" id="S1" data-out="0">
+	                <label class="switch">
+	                    <input type="checkbox" id="SO" onclick="switchTW('cmp2','S1');FNC_AND('cmp2');">
+	                    <span class="SWslider round"></span>
+	                </label>
+	            </div>
+		</div>
+		<div class="col text-center">
+                    <label for="S1">A</label>
+		    <div class="ButtonB" id="S2" data-out="0">
+			<label class="switch">
+			    <input type="checkbox" id="SO" onclick="switchTW('cmp2','S2');FNC_AND('cmp2');">
+			    <span class="SWslider round"></span>
+			</label>
+		    </div>
+		</div>
+		</div>
+		<br>
             <div class="none"></div>
             <div class="led off" id="out1">
                 <img src="imagenes/diodo-led.svg" class="diodo" alt="diodo">
