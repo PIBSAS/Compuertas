@@ -97,8 +97,16 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
     
     <!-- Particles.js container -->
     <div id="particles-js"></div>
+    <!-- Particles.js container FIN -->
 
-    <h2>Compuerta BUFFER:</h2>
+    <!-- Compuerta BUFFER: -->
+    <div class="container">
+	    <div class="row">
+		    <div class="col-12">
+			    <h1 class="text-center font-weight-bold">Compuerta BUFFER:</h1>
+		    </div>
+	    </div>
+    </div>
     <div class="container">
         <img src="imagenes/buffer.svg" alt="BUFFER">
         <img src="imagenes/tabla_buffer.svg" alt="BUFFER">
@@ -114,11 +122,52 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
         <a href="buffer.html" class="boton-enlace" target="_blank">Simular Compuerta BUFFER con Transistores NPN</a>
     </div>
     <br>
+	
+    <!--Simulacion Interactiva IF-->
+    <div class="row justify-content-center py-4">
+    <!-- Lógica Inicio -->
+    <div class="col-lg-6 container-Left bg-if" id="componentIdIF">
+        <div class="ButtonB" id="S1" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdIF','S1');simulateIFGate('componentIdIF');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="none"></div>
+        <div class="led off" id="out1"><img src="images/diodo-led.svg" class="diodo" /></div>
+    </div>
+	    
+    <!-- Tabla Inicio -->
+    <div class="col-lg-6 table-container">
+        <table id="Tif" class="Tabla-V">
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>Z</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #FD6F1D">
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+	    
+    </div>
+    <br>
+    <!--Fin de Simulacion IF-->
 
+    <!-- Compuerta NOT: -->
     <div class="container">
 	    <div class="row">
 		    <div class="col-12">
-			    <h1 class="text-center font-weight-bold text-success">Compuerta NOT:</h1>
+			    <h1 class="text-center font-weight-bold">Compuerta NOT:</h1>
 		    </div>
 	    </div>
     </div>
@@ -137,10 +186,51 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
         <a href="not.html" class="boton-enlace" target="_blank">Simular Compuerta NOT con Transistores NPN</a>
     </div>
     <br>
+	
+    <!--Simulacion Interactiva NOT-->
+    <div class="row justify-content-center py-4">
+    <!-- Lógica Inicio -->
+    <div class="col-lg-6 container-Left bg-not" id="componentIdNOT">
+        <div class="ButtonB" id="S1" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdNOT','S1');simulateNOTGate('componentIdNOT');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="none"></div>
+        <div class="led off" id="out1"><img src="images/diodo-led.svg" class="diodo" /></div>
+    </div>
+    <!-- Tabla Inicio -->
+    <div class="col-lg-6 table-container">
+        <table id="Tnot" class="Tabla-V">
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>Z</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #FD6F1D">
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+	    
+    </div>
+    <br>
+    <!--Fin de Simulacion NOT-->
+
+    <!-- Compuerta OR: -->
     <div class="container">
 	    <div class="row">
 		    <div class="col-12">
-			    <h1 class="text-center font-weight-bold text-success">Compuerta OR:</h1>
+			    <h1 class="text-center font-weight-bold">Compuerta OR:</h1>
 		    </div>
 	    </div>
     </div>
@@ -160,10 +250,71 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
         <a href="or.html" class="boton-enlace" target="_blank">Simular Compuerta OR con Transistores NPN</a>
     </div>
     <br>
+	
+    <!--Simulacion Interactiva OR-->
+    <div class="row justify-content-center py-4">
+    <!-- Lógica Inicio -->
+    <div class="col-lg-6 container-Left bg-or" id="componentIdOR">
+        <div class="ButtonA" id="S1" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdOR','S1');simulateORGate('componentIdOR');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="ButtonB" id="S2" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdOR','S2');simulateORGate('componentIdOR');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="none"></div>
+        <div class="led off" id="out1"><img src="images/diodo-led.svg" class="diodo" /></div>
+    </div>
+    <!-- Tabla Inicio -->
+    <div class="col-lg-6 table-container">
+        <table id="Tor" class="Tabla-V">
+            <thead>
+                <tr>
+                    <th>B</th>
+                    <th>A</th>
+                    <th>Z</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #FD6F1D">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+	    
+    </div>
+    <br>
+    <!--Fin de Simulacion OR-->
+
+    
+    <!-- Compuerta NOR: -->
     <div class="container">
 	    <div class="row">
 		    <div class="col-12">
-			    <h1 class="text-center font-weight-bold text-success">Compuerta NOR:</h1>
+			    <h1 class="text-center font-weight-bold">Compuerta NOR:</h1>
 		    </div>
 	    </div>
     </div>
@@ -183,10 +334,70 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
         <a href="nor.html" class="boton-enlace" target="_blank">Simular Compuerta NOR con Transistores NPN</a>
     </div>
     <br>
+	
+    <!--Simulacion Interactiva NOR-->
+    <div class="row justify-content-center py-4">
+    <!-- Lógica Inicio -->
+    <div class="col-lg-6 container-Left bg-nor" id="componentIdNOR">
+        <div class="ButtonA" id="S1" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdNOR','S1');simulateNORGate('componentIdNOR');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="ButtonB" id="S2" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdNOR','S2');simulateNORGate('componentIdNOR');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="none"></div>
+        <div class="led off" id="out1"><img src="images/diodo-led.svg" class="diodo" /></div>
+    </div>
+    <!-- Tabla Inicio -->
+    <div class="col-lg-6 table-container">
+        <table id="Tnor" class="Tabla-V">
+            <thead>
+                <tr>
+                    <th>B</th>
+                    <th>A</th>
+                    <th>Z</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #FD6F1D">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+	    
+    </div>
+    <br>
+    <!--Fin de Simulacion NOR-->
+
+    <!-- Compuerta AND: -->
     <div class="container">
 	    <div class="row">
 		    <div class="col-12">
-			    <h1 class="text-center font-weight-bold text-success">Compuerta AND:</h1>
+			    <h1 class="text-center font-weight-bold">Compuerta AND:</h1>
 		    </div>
 	    </div>
     </div>
@@ -194,64 +405,6 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
     <div class="container">
         <img src="imagenes/and.svg" alt="AND">
         <img src="imagenes/tabla_and.svg" alt="AND">
-    </div>
-    <br>
-    
-    <!-- Simulación Interactiva -->
-    <div class="row justify-content-center py-4">
-        <!--Logica AND-->
-	<div class="col-lg-6 container-Left bg-and" id="cmp2">
-		<div class="ButtonA " id="S1" data-out="0">
-			<label class="switch">
-				<input type="checkbox" id="SO" onclick="switchTW('cmp2','S1');FNC_AND('cmp2');">
-				<span class="SWslider round"></span>
-			</label>
-		</div>
-		<div class="ButtonB" id="S2" data-out="0">
-			<label class="switch">
-				<input type="checkbox" id="SO" onclick="switchTW('cmp2','S2');FNC_AND('cmp2');">
-				<span class="SWslider round"></span>
-			</label>
-		</div>
-		<div class="none"></div>
-		<div class="led off" id="out1"><img src="imagenes/diodo-led.svg" alt="diodo" class="diodo"/> </div>
-	</div>
-	<!--Fin de Logica-->
-        
-        <!-- Tabla -->
-        <div class="col-lg-6 table-container">
-            <table id="Tand" class="Tabla-V">
-                <thead>
-                    <tr>
-                        <th>B</th>
-                        <th>A</th>
-                        <th>SALIDA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="background-color: #FD6F1D">
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
     </div>
     <br>
     <!-- Imagen de la Tabla de la Compuerta AND (si es necesario) -->
@@ -268,10 +421,70 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
         <a href="and.html" class="boton-enlace" target="_blank">Simular Compuerta AND con Transistores NPN</a>
     </div>
     <br>
+
+    <!--Simulacion Interactiva AND-->
+    <div class="row justify-content-center py-4">
+    <!-- Lógica Inicio -->
+    <div class="col-lg-6 container-Left bg-and" id="componentId">
+        <div class="ButtonA" id="S1" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentId','S1');simulateANDGate('componentId');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="ButtonB" id="S2" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentId','S2');simulateANDGate('componentId');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="none"></div>
+        <div class="led off" id="out1"><img src="images/diodo-led.svg" class="diodo" /></div>
+    </div>
+    <!-- Tabla Inicio -->
+    <div class="col-lg-6 table-container">
+        <table id="Tand" class="Tabla-V">
+            <thead>
+                <tr>
+                    <th>B</th>
+                    <th>A</th>
+                    <th>Z</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #FD6F1D">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Fin Tabla -->
+    </div>
+    <br>
+    <!--Fin de Simulacion AND-->
+
+    <!-- Compuerta NAND: -->
     <div class="container">
 	    <div class="row">
 		    <div class="col-12">
-			    <h1 class="text-center font-weight-bold text-success">Compuerta NAND:</h1>
+			    <h1 class="text-center font-weight-bold">Compuerta NAND:</h1>
 		    </div>
 	    </div>
     </div>
@@ -291,15 +504,73 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
         <a href="nand.html" class="boton-enlace" target="_blank">Simular Compuerta NAND con Transistores NPN</a>
     </div>
     <br>
+	
+    <!--Simulacion Interactiva NAND-->
+    <div class="row justify-content-center py-4">
+    <!-- Lógica Inicio -->
+    <div class="col-lg-6 container-Left bg-nand" id="componentIdNAND">
+        <div class="ButtonA" id="S1" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdNAND','S1');simulateNANDGate('componentIdNAND');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="ButtonB" id="S2" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdNAND','S2');simulateNANDGate('componentIdNAND');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="none"></div>
+        <div class="led off" id="out1"><img src="images/diodo-led.svg" class="diodo" /></div>
+    </div>
+    <!-- Tabla Inicio -->
+    <div class="col-lg-6 table-container">
+        <table id="Tnand" class="Tabla-V">
+            <thead>
+                <tr>
+                    <th>B</th>
+                    <th>A</th>
+                    <th>Z</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #FD6F1D">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    </div>
+    <br>
+    <!--Fin de Simulacion NAND-->
 
+    <!-- Compuerta XOR: -->
     <div class="container">
 	    <div class="row">
 		    <div class="col-12">
-			    <h1 class="text-center font-weight-bold text-success">Compuerta XOR:</h1>
+			    <h1 class="text-center font-weight-bold">Compuerta XOR:</h1>
 		    </div>
 	    </div>
-    </div>
-	    
+    </div>    
     <div class="container">
         <img src="imagenes/xor.svg" alt="XOR">
         <img src="imagenes/tabla_xor.svg" alt="XOR">
@@ -315,11 +586,70 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
         <a href="xor.html" class="boton-enlace" target="_blank">Simular Compuerta XOR con Transistores NPN</a>
     </div>
     <br>
-    
+	
+    <!--Simulacion Interactiva XOR-->
+    <div class="row justify-content-center py-4">
+    <!-- Lógica Inicio -->
+    <div class="col-lg-6 container-Left bg-xor" id="componentIdXOR">
+        <div class="ButtonA" id="S1" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdXOR','S1');simulateXORGate('componentIdXOR');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="ButtonB" id="S2" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdXOR','S2');simulateXORGate('componentIdXOR');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="none"></div>
+        <div class="led off" id="out1"><img src="images/diodo-led.svg" class="diodo" /></div>
+    </div>
+    <!-- Tabla Inicio -->
+    <div class="col-lg-6 table-container">
+        <table id="Txor" class="Tabla-V">
+            <thead>
+                <tr>
+                    <th>B</th>
+                    <th>A</th>
+                    <th>Z</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #FD6F1D">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+	    
+    </div>
+    <br>
+    <!--Fin de Simulacion XOR-->
+
+    <!-- Compuerta XNOR: -->
     <div class="container">
 	    <div class="row">
 		    <div class="col-12">
-			    <h1 class="text-center font-weight-bold text-success">Compuerta XNOR:</h1>
+			    <h1 class="text-center font-weight-bold">Compuerta XNOR:</h1>
 		    </div>
 	    </div>
     </div>
@@ -338,7 +668,65 @@ Sirve tanto para aplicaciones de amplificación como de conmutación. Puede ampl
         <a href="xnor.html" class="boton-enlace" target="_blank">Simular Compuerta XNOR con Transistores NPN</a>
     </div>
     <br>
-    
+	
+    <!--Simulacion Interactiva XNOR-->
+    <div class="row justify-content-center py-4">
+    <!--Logica Inicio-->
+    <div class="col-lg-6 container-Left bg-xnor" id="componentIdXNOR">
+        <div class="ButtonA" id="S1" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdXNOR','S1');simulateXNORGate('componentIdXNOR');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="ButtonB" id="S2" data-out="0">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleOutputState('componentIdXNOR','S2');simulateXNORGate('componentIdXNOR');">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="none"></div>
+        <div class="led off" id="out1"><img src="images/diodo-led.svg" class="diodo" /></div>
+    </div>
+    <!--Tabla Inicio-->
+    <div class="col-lg-6 table-container">
+        <table id="Txnor" class="Tabla-V">
+            <thead>
+                <tr>
+                    <th>B</th>
+                    <th>A</th>
+                    <th>Z</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #FD6F1D">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </div>
+    <br>
+    <!--Fin de Simulacion XNOR-->
+	
     <script src="particulas/particles.js"></script>
     <script src="particulas/demo/js/app.js"></script>
     
